@@ -3,7 +3,7 @@ services:
   strapi:
     # build: .
     container_name: strapi
-    image: ghcr.io/insertish/PortfolioStrapi:master
+    image: ghcr.io/insertish/portfoliostrapi:master
     restart: unless-stopped
     env_file: .env
     environment:
@@ -24,7 +24,7 @@ services:
       - ./yarn.lock:/opt/yarn.lock # Replace with package-lock.json if using npm
       - ./.env:/opt/app/.env
     ports:
-      - "1337:1337"
+      - "10620:1337"
     networks:
       - strapi
     depends_on:
