@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Started": {
+      "type": "datetime"
+    },
+    "Updated": {
+      "type": "datetime"
+    },
+    "Featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Hidden": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "Tags": {
+      "type": "string",
+      "regex": "^[\\w\\s]+(?:,[\\w\\s]+)*$"
+    },
+    "Languages": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "website",
+        "app",
+        "library",
+        "game",
+        "service",
+        "utility",
+        "mod",
+        "other"
+      ]
+    },
+    "Website": {
+      "type": "string",
+      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+    },
+    "Repository": {
+      "type": "string",
+      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+    },
+    "Library": {
+      "type": "string",
+      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Sync": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "README": {
+      "type": "richtext"
+    }
+  }
+}

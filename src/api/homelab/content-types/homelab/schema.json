@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "homelabs",
+  "info": {
+    "singularName": "homelab",
+    "pluralName": "homelabs",
+    "displayName": "Homelab"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}
