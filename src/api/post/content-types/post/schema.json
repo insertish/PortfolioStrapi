@@ -36,8 +36,7 @@
       "type": "datetime"
     },
     "Tags": {
-      "type": "string",
-      "regex": "^[\\w\\s]+(?:,[\\w\\s]+)*$"
+      "type": "string"
     },
     "Subtitle": {
       "type": "text"

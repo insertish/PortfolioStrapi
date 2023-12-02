@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "donations",
+  "info": {
+    "singularName": "donate",
+    "pluralName": "donations",
+    "displayName": "Donations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

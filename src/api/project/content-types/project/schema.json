@@ -52,8 +52,7 @@
       "default": false
     },
     "Tags": {
-      "type": "string",
-      "regex": "^[\\w\\s]+(?:,[\\w\\s]+)*$"
+      "type": "string"
     },
     "Languages": {
       "type": "string"
@@ -68,23 +67,22 @@
         "service",
         "utility",
         "mod",
+        "os",
         "other"
       ]
     },
     "Website": {
-      "type": "string",
-      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+      "type": "string"
     },
     "Repository": {
-      "type": "string",
-      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+      "type": "string"
     },
     "Library": {
-      "type": "string",
-      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+      "type": "string"
     },
     "Content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "Sync": {
       "type": "boolean",
@@ -93,6 +91,9 @@
     },
     "README": {
       "type": "richtext"
+    },
+    "ComputedTimestamp": {
+      "type": "datetime"
     }
   }
 }
